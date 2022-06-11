@@ -1,0 +1,17 @@
+{
+  "name": "angular-micro-frontends",
+  "description": "Micro frontends architecture orchestrated by Webpack Module Federation in Angular.",
+  "private": true,
+  "author": "Kim Brun Jørgensen",
+  "homepage": "https://github.com/kimjoergensen/angular-micro-frontends#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimjoergensen/angular-micro-frontends.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kimjoergensen/angular-micro-frontends/issues"
+  },
+  "dependencies": {
+    "@angular-architects/module-federation": "^14.3.8"
+  }
+}
