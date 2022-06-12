@@ -1,3 +1,9 @@
 {
-	"mfe1": "http://localhost:3000/remoteEntry.js"
+	"products": {
+		"remoteEntry": "http://localhost:4201/remoteEntry.js",
+		"exposedModule": "./ProductsModule",
+		"displayName": "Products",
+		"routePath": "products",
+		"ngModuleName": "ProductsModule"
+	}
 }

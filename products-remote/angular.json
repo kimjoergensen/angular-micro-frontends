@@ -28,14 +28,9 @@
 							"src/assets"
 						],
 						"styles": [
-							"./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
+							"./node_modules/@angular/material/prebuilt-themes/purple-green.css",
 							"src/styles.scss"
 						],
-						"stylePreprocessorOptions": {
-							"includePaths": [
-								"src/theme"
-							]
-						},
 						"scripts": [],
 						"extraWebpackConfig": "webpack.config.js",
 						"commonChunk": false
@@ -112,7 +107,7 @@
 							"src/assets"
 						],
 						"styles": [
-							"./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
+							"./node_modules/@angular/material/prebuilt-themes/purple-green.css",
 							"src/styles.scss"
 						],
 						"scripts": []
