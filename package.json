@@ -16,5 +16,8 @@
   ],
   "scripts": {
     "start": "npm start --workspaces"
+  },
+  "dependencies": {
+    "@angular/cli": "^14.0.1"
   }
 }
