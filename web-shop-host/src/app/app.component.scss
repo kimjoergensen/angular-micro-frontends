@@ -1,0 +1,11 @@
+:host {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+app-sidenav {
+  display: flex;
+  flex: 1;
+}
