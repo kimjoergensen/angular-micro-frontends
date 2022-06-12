@@ -12,7 +12,8 @@
     "url": "https://github.com/kimjoergensen/angular-micro-frontends/issues"
   },
   "workspaces": [
-    "web-shop-host"
+    "web-shop-host",
+    "products-remote"
   ],
   "scripts": {
     "start": "npm start --workspaces"
