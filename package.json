@@ -1,9 +1,7 @@
 {
   "name": "angular-micro-frontends",
   "description": "Micro frontends architecture orchestrated by Webpack Module Federation in Angular.",
-  "private": true,
   "author": "Kim Brun Jørgensen",
-  "homepage": "https://github.com/kimjoergensen/angular-micro-frontends#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kimjoergensen/angular-micro-frontends.git"
@@ -11,15 +9,44 @@
   "bugs": {
     "url": "https://github.com/kimjoergensen/angular-micro-frontends/issues"
   },
-  "workspaces": [
-    "web-shop-host",
-    "products-remote"
-  ],
   "scripts": {
-    "web-shop-host": "npm run start -w web-shop-host",
-    "products-remote": "npm run start -w products-remote"
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "all": "node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js",
+    "run:all": "node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js"
   },
+  "private": true,
   "dependencies": {
-    "@angular/cli": "^14.0.1"
+    "@angular-architects/module-federation": "^14.3.9",
+    "@angular/animations": "^14.0.0",
+    "@angular/cdk": "^14.0.4",
+    "@angular/common": "^14.0.0",
+    "@angular/compiler": "^14.0.0",
+    "@angular/core": "^14.0.0",
+    "@angular/forms": "^14.0.0",
+    "@angular/material": "^14.0.4",
+    "@angular/platform-browser": "^14.0.0",
+    "@angular/platform-browser-dynamic": "^14.0.0",
+    "@angular/router": "^14.0.0",
+    "rxjs": "~7.5.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.11.4"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^14.0.4",
+    "@angular/cli": "~14.0.4",
+    "@angular/compiler-cli": "^14.0.0",
+    "@types/jasmine": "~4.0.0",
+    "jasmine-core": "~4.1.0",
+    "karma": "~6.3.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.0.0",
+    "karma-jasmine-html-reporter": "~1.7.0",
+    "ngx-build-plus": "^14.0.0",
+    "typescript": "~4.7.2"
   }
 }

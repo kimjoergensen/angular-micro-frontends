@@ -1,0 +1,26 @@
+<header>
+  <mat-toolbar color="primary">
+    <!-- Left aligned -->
+    <button
+      mat-icon-button
+      type="button"
+      (click)="menuClick.emit()"
+      aria-label="Toggle menu open/close"
+    >
+      <mat-icon>menu</mat-icon>
+    </button>
+    <a mat-button [routerLink]="['/']">Web Shop</a>
+
+    <!-- Spacer -->
+    <span class="spacing"></span>
+
+    <!-- Right aligned -->
+    <button
+      mat-icon-button
+      class="example-icon favorite-icon"
+      aria-label="Example icon-button with heart icon"
+    >
+      <mat-icon>favorite</mat-icon>
+    </button>
+  </mat-toolbar>
+</header>
