@@ -1,5 +1,11 @@
-@use 'variables' as variables;
+@use "variables" as variables;
+
+:host {
+  display: flex;
+  flex: 1;
+}
 
 main {
+  flex: 1;
   padding: variables.$spacing-md;
 }
