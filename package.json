@@ -11,6 +11,14 @@
   "bugs": {
     "url": "https://github.com/kimjoergensen/angular-micro-frontends/issues"
   },
+  "workspaces": [
+    "web-shop-host",
+    "products-remote"
+  ],
+  "scripts": {
+    "web-shop-host": "npm run start -w web-shop-host",
+    "products-remote": "npm run start -w products-remote"
+  },
   "dependencies": {
     "@angular/cli": "^14.0.1"
   }
