@@ -11,10 +11,11 @@
   },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test",
+    "start:webshop": "ng serve webshop-host",
+    "start:auth": "ng serve auth-remote",
+    "build:shared": "ng build shared",
+    "watch:shared": "ng build shared --watch",
+    "all": "concurrently \"npm run start:webshop\" \"npm run start:auth\"",
     "run:all": "node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js"
   },
   "private": true,

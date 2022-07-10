@@ -1,15 +1,13 @@
-const { shareAll, withModuleFederationPlugin } = require('@angular-architects/module-federation/webpack');
+const { shareAll, withModuleFederationPlugin } = require("@angular-architects/module-federation/webpack");
 
 module.exports = withModuleFederationPlugin({
-
-  name: 'mfe1',
+  name: "mfe1",
 
   exposes: {
-    './Component': './projects/auth-remote/src/app/app.component.ts',
+    "./routes": "./projects/auth-remote/src/app/auth.routes.ts",
   },
 
   shared: {
-    ...shareAll({ singleton: true, strictVersion: true, requiredVersion: 'auto' }),
+    ...shareAll({ singleton: true, strictVersion: true, requiredVersion: "auto" }),
   },
-
 });

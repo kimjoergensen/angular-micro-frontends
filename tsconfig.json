@@ -16,16 +16,11 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "paths": {
-      "shared": [
-        "dist/shared"
-      ]
+      "@shared": ["dist/shared"]
     },
     "target": "es2020",
     "module": "es2020",
-    "lib": [
-      "es2020",
-      "dom"
-    ]
+    "lib": ["es2020", "dom"]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
